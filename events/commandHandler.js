@@ -6,8 +6,8 @@ exports.execute = async (message) => {
     if (message.author.bot) return;
     if (!message.guild) return;
 
-    if (message.content.toLowerCase().startsWith(config.Prefix)) {
-        let args = message.content.substring(config.Prefix).trim().split(" ")
+    if (message.content.startsWith(config.Prefix)) {
+        let args = message.content.substring(config.Prefix.length).trim().split(" ")
         let command = args[0]
 
         args = args.splice(1);

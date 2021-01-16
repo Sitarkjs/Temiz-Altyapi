@@ -1,0 +1,12 @@
+{
+  "name": "stark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Stark",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fs": "0.0.2"
+  }
+}

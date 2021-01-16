@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 exports.execute = async (client, message, args) => {
     let commandName = args[0];
-    if(!commandName) return message.channel.send(`Tekrar başlatılacak bir komut ismi belirtmelisin.`);
+    if(!commandName) return message.channel.send(`Tekrar başlatılacak bir dosya ismi belirtmelisin.`);
 
     try {
         delete require.cache[require.resolve(`./${commandName}.js`)]

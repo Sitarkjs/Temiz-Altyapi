@@ -11,10 +11,10 @@ exports.execute = async (client, message, args) => {
         command.conf.aliases.forEach(aliases => {
             client.aliases.set(aliases, command)  
         });        
-        message.channel.send(`\`${commandName}\` Adlı komut yeniden başlatıldı.`)
+        message.channel.send(`\`${commandName}\` Adlı dosya yeniden başlatıldı.`)
     } catch (e) {
         console.log(e)
-        message.channel.send(`\`${commandName}\` Adlı komut yeniden başlatılamadı.`);
+        message.channel.send(`\`${commandName}\` Adlı dosya yeniden başlatılamadı.`);
         return message.channel.send(e, {code: "js", split: true})
     };
 };

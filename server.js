@@ -11,7 +11,7 @@ fs.readdirSync("./commands").filter(file => file.endsWith(".js")).forEach(file =
     client.commands.set(command.conf.command, command);
     console.log(`[Command] ${file.replace(".js", "")} command loaded.`);
     command.conf.aliases.forEach(aliases => {
-    client.aliases.set(aliases, command)  
+        client.aliases.set(aliases, command)  
     });
 });
 
